@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           submodules: true
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'oracle'
@@ -32,9 +32,9 @@ jobs:
       - name: Build CI Version
         run: cd ./hokiworker/cmd_exe/jni ; ndk-build ; cd ../../android_app ; chmod 0777 ./gradlew ; ./gradlew library:assembleRelease ; ./gradlew app:assembleRelease
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: CI.ziP
+          name: HoKiWorker-CI
           path: |
             hokiworker/cmd_exe/libs
             hokiworker/android_app/library/build/outputs/aar/library-release.aar
