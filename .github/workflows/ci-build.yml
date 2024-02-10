@@ -37,5 +37,5 @@ jobs:
           name: CI.ziP
           path: |
             hokiworker/cmd_exe/libs
-            hokiworker/android_app/library/build/outputs/aar/release/library-release.aar
+            hokiworker/android_app/library/build/outputs/aar/library-release.aar
             hokiworker/android_app/app/build/outputs/apk/release/app-release.apk
