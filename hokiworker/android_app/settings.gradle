@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://androidx.dev/storage/compose-compiler/repository" }
+        gradlePluginPortal()
+    }
+    plugins {}
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://androidx.dev/storage/compose-compiler/repository" }
+    }
+}
+
+rootProject.name = "HoKiWorker"
+include ':app'
+include ':library'

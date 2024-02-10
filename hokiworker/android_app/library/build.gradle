@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+    namespace 'tokyo.caimingyu.hokiworker.library'
+    ndkVersion "26.1.10909125"
+
+    defaultConfig {
+        minSdk 1
+        targetSdk 34
+        versionCode 10000
+        versionName "Version 1.0.0 (2024.02.09)"
+        //noinspection ChromeOsAbiSupport
+        ndk.abiFilters 'arm64-v8a', 'x86_64', 'armeabi-v7a', 'x86'//, 'armeabi', 'mips64', 'mips'
+    }
+
+    buildTypes.release.minifyEnabled false
+
+    externalNativeBuild.cmake.path 'jni/CMakeLists.txt'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+        encoding "UTF-8"
+    }
+
+    buildFeatures.buildConfig true
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.7.1'
+}

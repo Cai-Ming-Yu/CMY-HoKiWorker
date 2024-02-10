@@ -1,0 +1,19 @@
+buildscript {
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://androidx.dev/storage/compose-compiler/repository" }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.4.0-alpha09' // 8.4.0-alpha09 8.2.0-beta05
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.0-Beta3'
+        classpath 'com.github.megatronking.stringfog:gradle-plugin:5.1.0'
+        classpath 'com.github.megatronking.stringfog:xor:5.0.0'
+        classpath 'com.github.CodingGay:BlackObfuscator-ASPlugin:3.9'
+    }
+}
+
+plugins {}
