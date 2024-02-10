@@ -27,7 +27,7 @@ jobs:
           ndk-version: r26b
       - name: Change VersionName to Nightly Version
         run: |
-          sed -i 's/\(versionName ".*\) ([0-9]\{4\}\.[0-9]\{2\}\.[0-9]\{2\})"/\1 (Nightly)('"$(date "+%Y-%m-%d %T")"')"/' hokiworker/android_app/app/build.gradlesed -i 's/\(versionName ".*\) ([0-9]\{4\}\.[0-9]\{2\}\.[0-9]\{2\})"/\1 (Nightly)('"$(date "+%Y-%m-%d %T")"')"/' hokiworker/android_app/app/build.gradle
+          sed -i 's/\(versionName ".*\) ([0-9]\{4\}\.[0-9]\{2\}\.[0-9]\{2\})"/\1 (Nightly)('"$(date "+%Y-%m-%d %T")"')"/' hokiworker/android_app/app/build.gradlesed -i 's/\(versionName ".*\) ([0-9]\{4\}\.[0-9]\{2\}\.[0-9]\{2\})"/\1 (Nightly)('"$(date "+%Y-%m-%d %T")"')"/' hokiworker/android_app/app/build.gradle ;
           sed -i 's/\(versionName ".*\) ([0-9]\{4\}\.[0-9]\{2\}\.[0-9]\{2\})"/\1 (Nightly)('"$(date "+%Y-%m-%d %T")"')"/' hokiworker/android_app/app/build.gradlesed -i 's/\(versionName ".*\) ([0-9]\{4\}\.[0-9]\{2\}\.[0-9]\{2\})"/\1 (Nightly)('"$(date "+%Y-%m-%d %T")"')"/' hokiworker/android_app/library/build.gradle
       - name: Build CI Version
         run: cd ./hokiworker/cmd_exe/jni ; ndk-build ; cd ../../android_app ; chmod 0777 ./gradlew ; ./gradlew library:assembleRelease ; ./gradlew app:assembleRelease
