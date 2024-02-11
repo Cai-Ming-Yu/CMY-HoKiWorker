@@ -1,11 +1,11 @@
 [submodule "thirdparty/zstd"]
-	path = thirdparty/zstd
-	url = https://github.com/facebook/zstd.git
+path = thirdparty/zstd
+url = https://github.com/facebook/zstd.git
 
 [submodule "thirdparty/cpp-base64"]
-	path = thirdparty/cpp-base64
-	url = https://github.com/ReneNyffenegger/cpp-base64.git
+path = thirdparty/cpp-base64
+url = https://github.com/ReneNyffenegger/cpp-base64.git
 
 [submodule "thirdparty/tiny-AES-c"]
-	path = thirdparty/tiny-AES-c
-	url = https://github.com/kokke/tiny-AES-c.git
+path = thirdparty/tiny-AES-c
+url = https://github.com/kokke/tiny-AES-c.git
