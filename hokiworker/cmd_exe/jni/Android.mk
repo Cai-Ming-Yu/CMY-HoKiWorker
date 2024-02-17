@@ -20,7 +20,7 @@ LOCAL_MODULE := HoKiWorker
 
 LOCAL_MODULE_FILENAME := hokiworker
 
-COMMAND := -static -Wl,--strip-all -Os -fPIC -pipe -g0 -flto=thin -Wl,--gc-sections -ffunction-sections -fdata-sections -falign-functions -falign-loops -Wl,--sort-section=alignment -fvisibility=hidden -ffast-math -fno-stack-protector -fno-builtin -fmerge-all-constants -fmerge-constants -fno-unwind-tables -fno-asynchronous-unwind-tables -fno-strict-aliasing -fno-rtti -fno-exceptions -fomit-frame-pointer -fno-stack-check -fms-extensions -fdeclspec -fexceptions
+COMMAND := -static -Wl,--strip-all -Os -fPIC -pipe -g0 -flto=thin -Wl,--gc-sections -ffunction-sections -fdata-sections -falign-functions -falign-loops -Wl,--sort-section=alignment -fvisibility=hidden -ffast-math -fno-stack-protector -fno-builtin -fmerge-all-constants -fmerge-constants -fno-unwind-tables -fno-asynchronous-unwind-tables -fno-strict-aliasing -fno-rtti -fno-exceptions -fomit-frame-pointer -fno-stack-check -fms-extensions -fdeclspec -fvisibility-inlines-hidden
 
 LOCAL_CFLAGS := $(COMMAND) -std=c89
 LOCAL_CPPFLAGS := -std=c++17
