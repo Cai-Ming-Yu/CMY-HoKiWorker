@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/library/jni/thirdparty/cpp-base64" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/library/jni/thirdparty/tiny-AES-c" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/library/jni/thirdparty/zstd" vcs="Git" />
   </component>
 </project>

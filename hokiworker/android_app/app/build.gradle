@@ -20,7 +20,7 @@ android {
     namespace 'tokyo.caimingyu.hokiworker'
     compileSdk 34
     //noinspection GrDeprecatedAPIUsage
-    buildToolsVersion "34.0.0"
+    buildToolsVersion "35.0.0-rc1"
 
     defaultConfig {
         applicationId "tokyo.caimingyu.hokiworker"
